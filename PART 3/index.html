@@ -1,0 +1,88 @@
+<!-- COPYRIGHT INFO -->
+<!-- 
+          AUTHOR: RAJJIT LAISHRAM
+          DATE CREATED: FEBRUARY 15, 2023
+          PURPOSE: TO DESIGN A WEB THAT PLAYS MUSIC
+
+          DATE MODIFIED: FEBRUARY 17, 2023
+          CHANGES: ADDED MUSIC SLIDER with the WAVES
+ -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Music Web Player with Waves and Slider</title>
+
+          <!-- CSS LINK -->
+          <link rel="stylesheet" href="/css/style.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+          <!-- WAVE SURFER JS LINK -->
+          <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+
+<body>
+          <div class="container">
+                    <!-- NAVBAR -->
+                    <div class="navbar">
+                              <img src="img/music.png" class="logo" alt="no preview">
+                              <ul>
+                                        <li><a href="/">HOME</a></li>
+                                        <li><a href="/">ABOUT</a></li>
+                                        <li><a href="/">SPECIFICATIONS</a></li>
+                                        <li><a href="/">CONNECT</a></li>
+                              </ul>
+                    </div>
+
+                    <!-- MUSIC CONTENT -->
+                    <div class="content">
+                              <div class="left-col">
+                                        <h1>THE<br>REAL <br>SOUND</h1>
+                              </div>
+
+                              <!--WAVES  AND  MUSIC INFO -->
+                              <div class="right-col">
+                                        <div class="music-wave">
+                                                  <div id="waveform"></div>
+                                        </div>
+                                        <div class="right-col-n">
+                                                  <div class="div-circle">
+                                                            <div class="circle">
+                                                                      <i class="fa fa-angle-left"></i>
+                                                            </div>
+                                                            <div class="circle">
+                                                                      <i class="fa fa-bars"></i>
+                                                            </div>
+                                                  </div>
+                                                  <img src="/media/sub-urban.jpg" alt="thumbnail"
+                                                            class="song-thumbnail">
+                                                  <p>Artist: Sub Urban</p>
+                                                  <h1>Song: Cradles</h1>
+
+                                                  <span id="duration"></span>
+                                                  <input type="range" value="0" id="progress">
+                                                  <div class="controls">
+                                                            <div>
+                                                                      <i class="fa fa-backward"></i>
+                                                            </div>
+                                                            <div onclick="playPause()">
+                                                                      <i class="fa fa-play" id="ctrlIcon"></i>
+                                                            </div>
+                                                            <div>
+                                                                      <i class="fa fa-forward"></i>
+                                                            </div>
+                                                  </div>
+                                        </div>
+                              </div>
+                    </div>
+          </div>
+
+          <!-- JS LINK -->
+          <script src="/js/script.js"></script>
+</body>
+
+</html>
