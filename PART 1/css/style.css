@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(10, 10, 10, 0.11), rgba(0, 0, 0, 0.685)), url(/img/music_back.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar {
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 140px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  margin-top: 5px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+}
+
+.left-col {
+  margin-left: 6%;
+}
+
+.left-col h1 {
+  font-size: 80px;
+  color: #fff;
+  line-height: 110px;
+  float: left;
+}
+
+.right-col {
+  float: right;
+  margin-right: 26%;
+  display: flex;
+  align-items: center;
+}
+
+.right-col p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+#icon {
+  width: 60px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 720px) {
+  .navbar ul {
+    margin-left: 20px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .navbar ul li {
+    font-size: 15px;
+  }
+
+  .left-col h1 {
+    font-size: 45px;
+  }
+
+  .right-col {
+    margin-right: 10%;
+    margin-top: 15%;
+  }
+}
