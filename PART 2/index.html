@@ -1,0 +1,62 @@
+<!-- COPYRIGHT INFO -->
+<!-- 
+          AUTHOR: RAJJIT LAISHRAM
+          DATE CREATED: JANUARY 12, 2023
+          PURPOSE: TO DESIGN A WEB THAT PLAYS MUSIC
+
+          DATE MODIFIED: JANUARY 25, 2023
+          CHANGES: ADDED WAVE DESIGN
+ -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Music Web Player with Waves</title>
+
+          <!-- CSS LINK -->
+          <link rel="stylesheet" href="/css/style.css">
+
+          <!-- WAVE SURFER JS LINK -->
+          <script src="https://unpkg.com/wavesurfer.js"></script>
+</head>
+
+<body>
+          <div class="container">
+                    <!-- NAVBAR -->
+                    <div class="navbar">
+                              <img src="img/music.png" class="logo" alt="no preview">
+                              <ul>
+                                        <li><a href="/">HOME</a></li>
+                                        <li><a href="/">ABOUT</a></li>
+                                        <li><a href="/">SPECIFICATIONS</a></li>
+                                        <li><a href="/">CONNECT</a></li>
+                              </ul>
+                    </div>
+
+                    <!-- MUSIC CONTENT -->
+                    <div class="content">
+                              <div class="left-col">
+                                        <h1>THE<br>REAL <br>SOUND</h1>
+                              </div>
+                              
+                              <!-- MUSIC INFO AND WAVES -->
+                              <div class="right-col">
+                                        <p><span>Artist:</span> TWISTED</p>
+                                        <h1><span>Song:</span> WORTH NOTHING</h1>
+                                        <img src="img/play.png" id="icon" alt="reload">
+                                        <div class="music-wave">
+                                                  <div id="waveform"></div>
+                                        </div>
+                              </div>
+                    </div>
+          </div>
+
+          <!-- JS LINK -->
+          <script src="/js/script.js"></script>
+</body>
+
+</html>

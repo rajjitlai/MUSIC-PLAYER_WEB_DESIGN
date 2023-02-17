@@ -1,0 +1,132 @@
+/* DEFAULT */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* BODY */
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(10, 10, 10, 0.11), rgba(0, 0, 0, 0.685)),
+    url(/img/music_back.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  width: 140px;
+  cursor: pointer;
+}
+
+/* NAVBAR LINKS */
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  margin-top: 5px;
+}
+
+/* NAVBAR ADDRESS */
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* MUSIC CONTENT */
+.content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* LEFT DETAILS */
+.left-col h1 {
+  font-size: 80px;
+  color: #fff;
+  line-height: 110px;
+  float: left;
+}
+
+/* RIGHT DETAILS */
+.right-col {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 0, 0.233);
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+span{
+  color: #000;
+  font-weight: bolder;
+}
+
+/* TEXTS */
+.right-col h1,
+.right-col p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.right-col h1{
+  font-size: 17px !important;
+}
+
+/* PLAY/PAUSE ICON */
+#icon {
+  width: 60px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* WAVES */
+.music-wave{
+  width: 100%;
+}
+
+/* MARGIN */
+#waveform{
+  margin-top: 15px;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 720px) {
+  .navbar ul {
+    margin-left: 20px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .navbar ul li {
+    font-size: 15px;
+  }
+
+  .left-col h1 {
+    font-size: 45px;
+  }
+}
